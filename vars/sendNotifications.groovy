@@ -10,7 +10,7 @@ def call(String buildStatus = 'STARTED') {
   // Default values
   def color = 'danger'
   def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
-  def summary = "${subject} (${env.BUILD_URL})"
+  def summary = "${subject} (<${env.BUILD_URL}|Open>)"
   def details = """<p>${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
     <p>Check console output at &QUOT;<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>&QUOT;</p>"""
 
