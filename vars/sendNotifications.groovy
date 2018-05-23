@@ -5,7 +5,7 @@
  */
 def call(String buildStatus = 'STARTED') {
   // build status of null means successful
-  buildStatus =  buildStatus ?: 'SUCCESSFUL'
+  buildStatus =  buildStatus ?: 'ERROR'
 
   // Default values
   def color = 'danger'
